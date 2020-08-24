@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&display=swap');
+  * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: lato;
+}
+
+body {
+  background-color: #232323;
+}
+
+#header {
+  background-color: steelblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 25px 0px;
+  color: white;
+}
+#bar {
+  background: white;
+  display: flex;
+  justify-content: center;
+  height: 35px;
+}
+
+#bar-content {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#msg{
+display:none;
+color: steelblue;}
+#bar button {
+  height: 100%;
+  padding: 7px;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: larger;
+  color: steelblue;
+  font-weight: bold;
+  transition: all 0.5s ease;
+  outline: none;
+}
+#bar button:hover {
+  background-color: steelblue;
+  color: white;
+  cursor: pointer;
+}
+
+#content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+#c-content {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: space-between;
+}
+
+#c-content div {
+  margin: 5px;
+  width: 30%;
+  height: 200px;
+  border-radius: 20px;
+  min-width: 150px;
+  max-width: 220px;
+  transition: all 0.5s ease;
+}
+
+#c-content div:hover
+{
+    cursor: pointer;
+}
+#level span {
+  height: 100%;
+  padding: 8px 3px;
+  transition: all 0.5s ease;
+}
+.active,
+#level span:hover {
+  background-color: steelblue;
+  color: white;
+  cursor: pointer;
+}
